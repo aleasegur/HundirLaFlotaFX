@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.hundirlaflotafx.controller.Controller" alignment="CENTER" hgap="5" vgap="5">
+    <VBox alignment="CENTER" spacing="10">
+        <Text text="¡Bienvenido al juego de Batalla Naval!" style="-fx-font-size: 24;"/>
+        <Label fx:id="welcomeText" style="-fx-font-size: 18;" text="Presiona el botón para comenzar."/>
+        <Text fx:id="resultado" style="-fx-font-size: 18;"/>
+        <GridPane fx:id="tableroGrid" alignment="CENTER" hgap="5" vgap="5"/>
+       <!-- <Button text="Saludar" onAction="#onHelloButtonClick" style="-fx-font-size: 16;"/>-->
+        <Button text="Reiniciar Juego" onAction="#reiniciarJuego" style="-fx-font-size: 16;"/>
+    </VBox>
+</GridPane>
