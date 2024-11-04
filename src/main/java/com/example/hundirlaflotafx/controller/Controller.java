@@ -32,7 +32,7 @@ public class Controller {
     }
 
     private void colocarBarcosAleatorios(int cantidad) {
-        tablero.colocarBarcosAleatorios(cantidad); // Método en Tablero para colocar barcos aleatorios
+        tablero.colocarBarcosAleatorios(cantidad);
     }
 
     private void crearBotonesTablero() {
