@@ -9,7 +9,7 @@
         <Text style="-fx-font-size: 24;" text="¡Bienvenido al juego de Hundir la Flota!" />
         <Label fx:id="welcomeText" style="-fx-font-size: 18;" text="Presiona el botón para comenzar." />
         <Text fx:id="resultado" style="-fx-font-size: 18;" />
-        <GridPane fx:id="tableroGrid" alignment="CENTER" hgap="5" prefHeight="0.0" prefWidth="442.0" vgap="5" />
+        <GridPane fx:id="tableroGrid" alignment="CENTER" hgap="5" prefHeight="170.0" prefWidth="442.0" vgap="5" />
        <!-- <Button text="Saludar" onAction="#onHelloButtonClick" style="-fx-font-size: 16;"/>-->
         <Button onAction="#reiniciarJuego" style="-fx-font-size: 16;" text="Reiniciar Juego" />
     </VBox>

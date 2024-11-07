@@ -31,7 +31,7 @@ public class Tablero {
     }
 
     //Vreamos un metodo para inicializar las celdas vacias
-    void inicializarCeldas() {
+   public void inicializarCeldas() {
         for (int i = 0; i < filas; i++) {
             for (int j = 0; j < columnas; j++) {
                 celdas[i][j] = new Celda(i, j);
@@ -39,7 +39,7 @@ public class Tablero {
         }
     }
 
-    // Método para ubicar un barco en una posición específica
+    //ubicar un barco en una posición específica
     public void colocarBarco(int fila, int columna, Barco barco) {
             if (fila >= 0 && fila < filas && columna >= 0 && columna < columnas) {
                 celdas[fila][columna] = new Celda(barco);
@@ -81,7 +81,7 @@ public class Tablero {
         }
         return res;
     }
-    // Método para colocar barcos aleatorios
+    //colocar barcos aleatorios
     public void colocarBarcosAleatorios(int cantidad) {
         Random random = new Random();
         for (int i = 0; i < cantidad; i++) {
