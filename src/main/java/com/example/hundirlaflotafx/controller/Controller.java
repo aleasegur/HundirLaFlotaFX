@@ -31,11 +31,11 @@ public class Controller {
         resultado.setText(""); // Reinicia el mensaje de resultado
     }
 
-    private void colocarBarcosAleatorios(int cantidad) {
+    public void colocarBarcosAleatorios(int cantidad) {
         tablero.colocarBarcosAleatorios(cantidad);
     }
 
-    private void crearBotonesTablero() {
+    public void crearBotonesTablero() {
         tableroGrid.getChildren().clear(); // Limpia el tablero anterior
         for (int fila = 0; fila < FILAS; fila++) {
             for (int columna = 0; columna < COLUMNAS; columna++) {
@@ -72,7 +72,7 @@ public class Controller {
     }*/
 
     @FXML
-    protected void reiniciarJuego() {
+    public void reiniciarJuego() {
         iniciarJuego(); // Reinicia el juego
         welcomeText.setText("¡Juego reiniciado!"); // Mensaje de reinicio
     }

@@ -20,13 +20,13 @@ public class Barco {
         return impacto;
     }
 
-    void recibirImpacto(){
+    public void recibirImpacto(){
         if (impacto<tamano){
             impacto++;
         }
     }
 
-    boolean estaHundido(){
+    public boolean estaHundido(){
         boolean res=impacto>=tamano;
         return res;
     }

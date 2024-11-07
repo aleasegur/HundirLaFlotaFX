@@ -59,7 +59,7 @@ public class Celda {
         this.barco = barco;
     }
 
-    boolean atacar(){
+    public boolean atacar(){
         atacar=true;//Marca como atacado la celda
         boolean res=(barco!=null);//Devuelve verdadero si hay un barco en esta celda
         return res;
